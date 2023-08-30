@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>>
+main()
+{
+
+    int numero1, raiz, quadrada;
+
+    printf("Digite 1 numero:");
+    scanf("%d", &numero1);
+
+    if (numero1 >= 0)
+    {
+        raiz = sqrt(numero1);
+        printf("A raiz qudrada é %d", raiz);
+    }
+    else if (numero1 < 0)
+    {
+        quadrada = pow(numero1, 2);
+        printf("O quadrado do numero e %d", quadrada);
+    }
+}
