@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+main()
+{
+   int a = 5, b = 200, c = 400, d = 500, e = 1000, numero;
+
+   printf("Digite um numero");
+   scanf("%d", &numero);
+
+   if (numero == a || numero == b || numero == c)
+   {
+      printf("\n o numero e igual a 5 ou 200 ou 400");
+      printf("\n o numero n esta entre 500 e 1000");
+   }
+   else if (numero < d || numero > e)
+   {
+      printf(" \no numero n esta entre 500 e 1000");
+   }
+   else
+   {
+      printf(" \no numero esta entre 500 e 1000");
+   }
+}
