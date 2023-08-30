@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+main()
+{
+
+    int a = 5, b = 10, c = 15, d = 20;
+
+    if (d > c && d > b && d > a)
+    {
+        printf("O seu maior numero e %d", d);
+    }
+    if (a < b && a < c && a < d)
+    {
+        printf(" \n O seu menor numero e: %d", a);
+    }
+}
