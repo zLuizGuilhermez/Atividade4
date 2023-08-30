@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+main()
+{
+
+    float prova1, prova2, prova3, prova3Final, notaFinal;
+
+    printf("Digite a sua nota da prova 1");
+    scanf("%f", &prova1);
+
+    printf("Digite a sua nota da prova 2 ");
+    scanf("%f", &prova2);
+
+    printf("Digite a sua nota da prova 3");
+    scanf("%f", &prova3);
+
+    prova3Final = prova3 * 2;
+
+    notaFinal = ((prova1 + prova2 + prova3Final) / 3);
+
+    if (notaFinal >= 7)
+    {
+        printf("Aprovado");
+    }
+    else
+    {
+        printf("Reprovado");
+    }
+}
