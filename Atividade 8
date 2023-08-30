@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+
+main(){
+  
+    int idade, servico;
+
+    printf("Digite sua idade ( em anos)");
+    scanf("%d", &idade);
+
+    printf("Digite seu tempo de serviço (em anos)");
+    scanf("%d", &servico);
+
+
+    if (idade >=65 || servico >= 30)
+    {
+        printf("Pode aposentar");
+        
+    }
+    else if ( idade >= 60 && servico >= 25)
+    {
+       printf("Pode aposentar");
+    }
+    else{
+        printf("Nao pode aposentar");
+    }
+    
+    
+
+}
