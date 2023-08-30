@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <math.h>
+
+/// @brief
+main()
+{
+
+    int a = 0, b = 0, c = 0, delta,bhas,bhas2;
+
+    printf("De o valor de a");
+    scanf("%d", &a);
+
+    printf("De o valor de b");
+    scanf("%d", &b);
+
+    printf("De o valor de c ");
+    scanf("%d", &c);
+
+    delta = pow(b, 2) - 4*a*c;
+
+    if (delta < 0)
+    {
+        printf("não existe raiz");
+    }
+    else if (delta == 0)
+    {
+        bhas = -b /2 *a;
+        printf("Raiz unica. existe uma raiz real que e : %d", bhas);
+    }
+    else if(delta >= 0){
+
+         bhas = (-b + sqrt(delta)) / (2*a);
+         bhas2 = (-b - sqrt(delta)) / (2*a);
+
+         printf("O seu primeiro x e:%d", bhas);
+         printf("\nO seu segundo x e : %d", bhas2);
+    }
+    
+}
