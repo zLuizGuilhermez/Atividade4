@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main()
+{
+    float salario = 0.0;
+    float final = 0.0;
+    float servico = 0.0;
+    float final2 = 0.0;
+    float final3 = 0.0;
+    float final4 = 0.0;  
+    float final5 = 0.0;
+
+    printf("Qual seu salario:");
+    scanf("%f", &salario);
+
+    printf("Qual seu tempo de servico (em anos)");
+    scanf("%f", &servico);
+
+    if (servico < 1 && salario <= 500)
+    {
+        final = ((salario * (float)0.25) + salario);
+        printf("O seu salario com reajuste ficaria : %0.2f", final);
+    }
+    else if (servico >= 1 && servico  <= 3 && salario <= 1000)
+    {
+        final2 = ((salario * (float)0.20) + salario + 100);
+        printf("O seu salario com reajuste ficaria : %0.2f", final2);
+    }
+    else if (servico >= 4 && servico  <= 6 && salario <= 1500)
+    {
+        final3 = ((salario * (float)0.15) + salario + 200);
+        printf("O seu salario com reajuste ficaria: %0.2f", final3);
+    }
+    else if (servico >= 7 && servico  <= 10 && salario <= 2000)
+    {
+        final4 = ((salario * 0.10) + salario + 300);
+        printf("O seu salario com reajuste ficaria : %0.2f", final4);
+    }
+    else if (servico > 10 && salario > 2000)
+    {
+        final5 = salario + 500;
+        printf(" O seu salario com reajuste ficaria %0.2f", final5);
+    }
+    else
+    {
+    }
+
+    return 0;
+}
